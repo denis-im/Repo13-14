@@ -1,25 +1,13 @@
 
-* {
-  box-sizing: border-box;
-}
 
 body {
-  /* display: flex; */
-  /* flex: content; */
-  /* flex-wrap: wrap; */
-  /* justify-content: center; */
-  /* line-height: 1; */
-  float: left;
-  align-items: center;
-  width: 90%;
-  /* display: flex; */
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  /* flex-direction: column; */
-  /* height: 100vw; */
   display: flex;
 } 
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
 
 .container {
   position: relative;
@@ -34,9 +22,6 @@ body {
   display: block;
   width: 200px;
   height: auto;
-  /* display: flex;
-  flex-wrap: wrap;   */
-  /* object-fit: none; */
 }
 
 .overlay {
@@ -70,7 +55,7 @@ body {
 .close {
   position: fixed;
   top: 22%;
-  right: 18%;
+  right: 15%;
   font-size: 20px;
   width: 20px;
   height: 20px;
@@ -84,14 +69,16 @@ body {
 
 .dialog {
   position: fixed;
-  height: 65%;
-  width: 65%;
+  height: 70%;
+  width: 70%;
   top: 20%;
   left: 0;
   background-color: rgba(0, 0, 0, 0.7);
   color: #fff;
   z-index: 1;
   overflow: auto;
-
 }
 
+h1 {
+  font-size: larger;
+}
